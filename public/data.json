@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Culinary Delights",
+    "image": "https://i.ibb.co/hYwcs3N/culinary-Delights.jpg",
+    "price": "$5000",
+    "short_description": "Savor every moment with our Culinary Delights wedding service. From gourmet feasts to delightful desserts, we turn your wedding into a flavorful celebration you'll cherish forever.",
+    "button": "Add to Cart"
+  },
+  {
+    "id": 2,
+    "name": "Floral Enchantment",
+    "image": "https://i.ibb.co/svsGvKK/Floral-Enchantment.jpg",
+    "price": "$3000",
+    "short_description": "Transform your wedding into a blooming paradise with our Floral Enchantment service. We craft enchanting floral arrangements that add a touch of natural beauty and romance to your special day.",
+    "button": "Buy Now"
+  },
+  {
+    "id": 3,
+    "name": "Couture candles & Lighting",
+    "image": "https://i.ibb.co/0nSGVNG/Couture-Candles-Lighting.jpg ",
+    "price": "$7000",
+    "short_description": "Elevate your wedding ambiance with our Couture Candles & Lighting. We create enchanting atmospheres, radiating romance and elegance through carefully curated lighting and exquisite candle decor.",
+    "button": "View Details"
+  },
+  {
+    "id": 4,
+    "name": "Serenade Strings",
+    "image": "https://i.ibb.co/YfKpgsx/Serenade-Strings.jpg",
+    "price": "$10000",
+    "short_description": "Enchant your wedding with Serenade Strings. Our live musical ensembles weave melodies that will make your special day truly unforgettable",
+    "button": "Add to Cart"
+  },
+  {
+    "id": 5,
+    "name": "Glamuar & Glow",
+    "image": "https://i.ibb.co/jv73NhL/Glamour-Glow.jpg",
+    "price": "$1200",
+    "short_description": "Elevate your bridal beauty with Glamour & Glow. Our expert stylists ensure you radiate elegance and confidence on your wedding day.",
+    "button": "Buy Now"
+  },
+  {
+    "id": 6,
+    "name": "Wedding Whispers ",
+    "image": "https://i.ibb.co/GWTV6vq/Wedding-Whispers.jpg",
+    "price": "$9000",
+    "short_description": "Capture the essence of your love story with Wedding Whispers. Personalized vows and officiation services for an unforgettable ceremony.",
+    "button": "Add to Cart"
+  }
+]
