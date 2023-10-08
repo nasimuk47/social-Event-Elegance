@@ -1,7 +1,7 @@
 const WeddingPlan = () => {
     return (
         <div>
-            <h1 className="text-5xl font-serif flex justify-center mt-10 text-blue-300">
+            <h1 className="text-5xl font-serif flex justify-center mt-10 text-gray-500">
                 Wedding Plans
             </h1>
 
@@ -12,11 +12,11 @@ const WeddingPlan = () => {
 
             <div className="bg-gray-200 w-[1150px] mx-auto rounded-md h-[600px] mt-10">
                 <div className="mt-5">
-                    <h2 className="text-5xl font-semibold text-gray-500 flex justify-center mt-5">
+                    <h2 className="text-5xl font-semibold  flex justify-center mt-5 text-blue-400">
                         Sophia & Kenerd
                     </h2>
                     <hr />
-                    <p className="text-xl flex justify-center">
+                    <p className="text-xl  flex justify-center">
                         Sophia & Kenerd s Joyous Union: A Celebration of Love
                     </p>
                     <div className="flex gap-2 justify-center mt-10 ">
