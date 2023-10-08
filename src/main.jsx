@@ -12,6 +12,7 @@ import Registration from "./components/security/Registration";
 import Gellery from "./components/Gellery";
 import About from "./components/About";
 import ServiceDetails from "./components/ServiceDetails";
+import Boked from "./components/Boked";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: "/Gallery",
                 element: <Gellery></Gellery>,
+            },
+            {
+                path: "/Boked",
+                element: <Boked></Boked>,
             },
             {
                 path: "/About",

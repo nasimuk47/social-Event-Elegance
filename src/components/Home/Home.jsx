@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Import Link from react-router-dom
 
 const Home = () => {
     const backgroundImageUrl = "https://i.ibb.co/3Fpk33T/weaddig-banner.webp";
@@ -18,11 +18,9 @@ const Home = () => {
         fontWeight: "bold",
     };
 
-    // State to hold card data
     const [cardsData, setCardsData] = useState([]);
 
     useEffect(() => {
-        // Fetch data from data.json (you may need to adjust the path)
         fetch("/data.json")
             .then((response) => response.json())
             .then((data) => {
@@ -71,10 +69,9 @@ const Home = () => {
                             </p>
 
                             <div className="card-actions justify-center">
-                                {/* Use Link component to navigate to service detail route */}
                                 <Link
                                     to={`/Service/${card.id}`}
-                                    className="btn btn-accent">
+                                    className="btn bg-gray-300">
                                     Details
                                 </Link>
                             </div>

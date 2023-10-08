@@ -41,6 +41,19 @@ const Navber = () => {
                         </li>
                         <li>
                             <NavLink
+                                to="/Boked"
+                                className={({ isActive, isPending }) =>
+                                    isPending
+                                        ? "pending"
+                                        : isActive
+                                        ? "text-red-500 underline"
+                                        : ""
+                                }>
+                                Booking service
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
                                 to="/About"
                                 className={({ isActive, isPending }) =>
                                     isPending

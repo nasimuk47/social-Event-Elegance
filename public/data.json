@@ -5,7 +5,8 @@
     "image": "https://i.ibb.co/hYwcs3N/culinary-Delights.jpg",
     "price": "$5000",
     "short_description": "Savor every moment with our Culinary Delights wedding service. From gourmet feasts to delightful desserts, we turn your wedding into a flavorful celebration you'll cherish forever.",
-    "button": "Add to Cart"
+    "button": "Add to Cart",
+    "Details_description":"At Culinary Delights, we believe that the way to the heart is through the stomach, and we're here to make your wedding day a gastronomic masterpiece. Our culinary team is dedicated to creating an unforgettable dining experience for you and your guests. From the first bite to the last, our meticulously crafted dishes are a symphony of flavors, reflecting your unique tastes and preferences.We offer a diverse range of culinary options, whether you dream of a formal plated dinner, a lavish buffet, or even a themed food station that adds a touch of whimsy to your celebration. Our chefs are passionate about sourcing the finest ingredients, ensuring that every dish not only tantalizes your taste buds but also leaves a lasting impression."
   },
   {
     "id": 2,
@@ -13,7 +14,9 @@
     "image": "https://i.ibb.co/svsGvKK/Floral-Enchantment.jpg",
     "price": "$3000",
     "short_description": "Transform your wedding into a blooming paradise with our Floral Enchantment service. We craft enchanting floral arrangements that add a touch of natural beauty and romance to your special day.",
-    "button": "Buy Now"
+    "button": "Buy Now",
+
+    "Details_description":"We understand that every wedding is unique and so are your floral desires. From cascading bouquets of vibrant blooms to minimalist and modern arrangements we carefully curate each piece to reflect your personal style and wedding theme.Our commitment to excellence extends to the selection of the freshest and most exquisite flowers from around the world. Whether it's the vibrant colors of summer the soft pastels of spring or the rich hues of autumn we create artful arrangements that enhance your weddings ambiance"
   },
   {
     "id": 3,
@@ -21,7 +24,8 @@
     "image": "https://i.ibb.co/0nSGVNG/Couture-Candles-Lighting.jpg ",
     "price": "$7000",
     "short_description": "Elevate your wedding ambiance with our Couture Candles & Lighting. We create enchanting atmospheres, radiating romance and elegance through carefully curated lighting and exquisite candle decor.",
-    "button": "View Details"
+    "button": "View Details",
+    "Details_description":"Couture Candles & Lighting is the artistry of ambiance, where light becomes an integral part of your wedding's story. Our team specializes in creating unforgettable atmospheres through carefully curated lighting and exquisite candle decor.We understand that the right lighting can transform spaces and evoke emotions. From the soft flicker of candlelight that adds warmth and intimacy to grandiose lighting installations that create a magical aura, we ensure that every corner of your wedding venue is a masterpiece."
   },
   {
     "id": 4,
@@ -29,7 +33,8 @@
     "image": "https://i.ibb.co/YfKpgsx/Serenade-Strings.jpg",
     "price": "$10000",
     "short_description": "Enchant your wedding with Serenade Strings. Our live musical ensembles weave melodies that will make your special day truly unforgettable",
-    "button": "Add to Cart"
+    "button": "Add to Cart",
+    "Details_description":"Serenade Strings is the harmonious touch that adds a symphony of elegance and emotion to your wedding day. We specialize in live musical ensembles that create unforgettable moments through the power of music.Imagine walking down the aisle to the gentle strains of a string quartet or being serenaded by a talented vocalist as you exchange vows. With Serenade Strings, your wedding becomes a canvas for musical storytelling, where each note expresses the depth of your love."
   },
   {
     "id": 5,
@@ -37,7 +42,8 @@
     "image": "https://i.ibb.co/jv73NhL/Glamour-Glow.jpg",
     "price": "$1200",
     "short_description": "Elevate your bridal beauty with Glamour & Glow. Our expert stylists ensure you radiate elegance and confidence on your wedding day.",
-    "button": "Buy Now"
+    "button": "Buy Now",
+    "Details_description":"wedding day is a once-in-a-lifetime moment, and your beauty should shine as brightly as your love. With Glamour & Glow, we curate personalized beauty experiences that cater to your unique style, enhancing your natural features and highlighting your inner glow.From flawless makeup application that lasts from the ceremony to the dance floor to the perfect hairstyle that complements your bridal attire, we pay meticulous attention to every detail. Our artists are skilled in creating looks that range from classic elegance to contemporary chic, ensuring that your vision becomes a reality."
   },
   {
     "id": 6,
@@ -45,6 +51,7 @@
     "image": "https://i.ibb.co/GWTV6vq/Wedding-Whispers.jpg",
     "price": "$9000",
     "short_description": "Capture the essence of your love story with Wedding Whispers. Personalized vows and officiation services for an unforgettable ceremony.",
-    "button": "Add to Cart"
+    "button": "Add to Cart",
+    "Details_description":"the embodiment of personal and heartfelt moments on your wedding day. We specialize in crafting customized vows and officiation services that turn your ceremony into a profound and intimate expression of your love.We understand that your wedding ceremony is the heart of your celebration, and the words you exchange are the soul. With Wedding Whispers, we help you articulate the depths of your emotions, ensuring that your vows are a true reflection of your journey together."
   }
 ]
