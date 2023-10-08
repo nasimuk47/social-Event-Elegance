@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Clients from "../Clients";
+import WeddingPlan from "../WeddingPlan";
 
 const Home = () => {
     const backgroundImageUrl = "https://i.ibb.co/3Fpk33T/weaddig-banner.webp";
@@ -43,7 +45,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <h1 className="text-5xl font-bold flex justify-center mt-5 ">
+            <h1 className="text-5xl font-serif flex justify-center mt-5 ">
                 Our Service
             </h1>
 
@@ -51,7 +53,7 @@ const Home = () => {
                 {cardsData.map((card) => (
                     <div
                         key={card.id}
-                        className="card card-compact w-96 bg-base-100 shadow-xl mt-5">
+                        className="card card-compact w-[360px] bg-base-100 shadow-xl mt-5">
                         <figure>
                             <img
                                 className="w-full h-64 p-2 rounded-t-2xl"
@@ -79,6 +81,10 @@ const Home = () => {
                     </div>
                 ))}
             </div>
+
+            <WeddingPlan></WeddingPlan>
+
+            <Clients></Clients>
         </div>
     );
 };
