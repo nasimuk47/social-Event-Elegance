@@ -10,9 +10,10 @@ import Home from "./components/Home/Home";
 import Login from "./components/security/Login";
 import Registration from "./components/security/Registration";
 import Gellery from "./components/Gellery";
-import About from "./components/About";
+
 import ServiceDetails from "./components/ServiceDetails";
 import Boked from "./components/Boked";
+import NotFound from "./components/NotFound";
 
 const router = createBrowserRouter([
     {
@@ -39,13 +40,14 @@ const router = createBrowserRouter([
                 path: "/Boked",
                 element: <Boked></Boked>,
             },
-            {
-                path: "/About",
-                element: <About></About>,
-            },
+
             {
                 path: "/Service/:serviceId",
                 element: <ServiceDetails></ServiceDetails>,
+            },
+            {
+                path: "*",
+                element: <NotFound></NotFound>,
             },
         ],
     },

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/mBBLN29/13.jpg",
+    "location": "Mumbai, India",
+    "couple_name": "John & Emily"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/mtKVv6F/1.jpg",
+    "location": "Delhi, India",
+    "couple_name": "Michael & Sophia"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/FgBsZ7T/4.jpg",
+    "location": "Kolkata, India",
+    "couple_name": "David & Sarah"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/zXMKYzX/3.jpg",
+    "location": "Chennai, India",
+    "couple_name": "Daniel & Emma"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/dGfpGSm/2.jpg",
+    "location": "Bengaluru, India",
+    "couple_name": "William & Olivia"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/g3s7bsm/5.jpg",
+    "location": "Hyderabad, India",
+    "couple_name": "Lucas & Isabella"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/vwPqt6W/6.jpg",
+    "location": "Pune, India",
+    "couple_name": "Ethan & Mia"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/m8Tq81H/7.jpg",
+    "location": "Jaipur, India",
+    "couple_name": "Benjamin & Lily"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/B6mbvj1/8.jpg",
+    "location": "Ahmedabad, India",
+    "couple_name": "Oliver & Ava"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/Zx0p4t8/9.jpg",
+    "location": "Lucknow, India",
+    "couple_name": "Noah & Grace"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/PcXbJnS/10.jpg",
+    "location": "Kochi, India",
+    "couple_name": "Jacob & Mia"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/gJk1tfd/10.jpg",
+    "location": "Chandigarh, India",
+    "couple_name": "Alexander & Chloe"
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/PTXVZrs/11.jpg",
+    "location": "Bhopal, India",
+    "couple_name": "Elijah & Harper"
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/jGxsBBn/12.jpg",
+    "location": "Indore, India",
+    "couple_name": "Matthew & Zoey"
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/5TXxTNP/14.jpg",
+    "location": "Amritsar, India",
+    "couple_name": "Carter & Sofia"
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/xJDBfDg/15.webp",
+    "location": "Jaipur, India",
+    "couple_name": "Logan & Scarlett"
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/M6pWxpK/16.jpg",
+    "location": "Nagpur, India",
+    "couple_name": "Ethan & Mia"
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/rmZjCph/17.jpg",
+    "location": "Chandigarh, India",
+    "couple_name": "Jacob & Mia"
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co/4ThdXpr/18.jpg",
+    "location": "Nagpur, India",
+    "couple_name": "Matthew & Zoey"
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/VVFSw6x/19.jpg",
+    "location": "Amritsar, India",
+    "couple_name": "Carter & Sofia"
+  }
+]

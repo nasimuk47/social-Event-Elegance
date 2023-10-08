@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 const Boked = () => {
     const [bokedServices, setBokedServices] = useState([]);
@@ -57,6 +58,8 @@ const Boked = () => {
                     ))}
                 </div>
             )}
+
+            <Footer></Footer>
         </div>
     );
 };

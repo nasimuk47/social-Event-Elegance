@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Clients from "../Clients";
 import WeddingPlan from "../WeddingPlan";
+import Footer from "../Footer";
 
 const Home = () => {
     const backgroundImageUrl = "https://i.ibb.co/3Fpk33T/weaddig-banner.webp";
@@ -85,6 +86,7 @@ const Home = () => {
             <WeddingPlan></WeddingPlan>
 
             <Clients></Clients>
+            <Footer></Footer>
         </div>
     );
 };

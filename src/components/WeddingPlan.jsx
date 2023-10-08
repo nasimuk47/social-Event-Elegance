@@ -1,14 +1,46 @@
 const WeddingPlan = () => {
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
             <h1 className="text-5xl font-serif flex justify-center mt-10 text-gray-500">
                 Wedding Plans
             </h1>
-
             <p className="text-xl flex justify-center">
                 {" "}
                 We Provide the venue for the most amazing wedding reception
             </p>
+
+            <div className=" grid grid-cols-1 lg:grid-cols-3  mt-5">
+                <img
+                    className="w-[330px] h-[330px]"
+                    src="https://i.ibb.co/Lk427Qn/w1.jpg"
+                    alt=""
+                />
+                <img
+                    className="w-[330px] h-[330px]"
+                    src="https://i.ibb.co/pQx2PBk/w2.jpg"
+                    alt=""
+                />
+                <img
+                    className="w-[330px] h-[330px]"
+                    src="https://i.ibb.co/hWpwd9Y/w6.jpg"
+                    alt=""
+                />
+                <img
+                    className="w-[330px] h-[330px] mt-10"
+                    src="https://i.ibb.co/MkH388z/w5.jpg"
+                    alt=""
+                />
+                <img
+                    className="w-[330px] h-[330px] mt-10"
+                    src="https://i.ibb.co/Rzz0wh7/w4.jpg"
+                    alt=""
+                />
+                <img
+                    className="w-[330px] h-[330px] mt-10"
+                    src="https://i.ibb.co/58Pzf2L/w3.jpg"
+                    alt=""
+                />
+            </div>
 
             <div className="bg-gray-200 w-[1150px] mx-auto rounded-md h-[600px] mt-10">
                 <div className="mt-5">

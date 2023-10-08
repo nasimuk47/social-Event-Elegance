@@ -26,19 +26,7 @@ const Navber = () => {
                                 Home
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink
-                                to="/Gallery"
-                                className={({ isActive, isPending }) =>
-                                    isPending
-                                        ? "pending"
-                                        : isActive
-                                        ? "text-red-500 underline"
-                                        : ""
-                                }>
-                                Gallery
-                            </NavLink>
-                        </li>
+
                         <li>
                             <NavLink
                                 to="/Boked"
@@ -54,7 +42,7 @@ const Navber = () => {
                         </li>
                         <li>
                             <NavLink
-                                to="/About"
+                                to="/Gallery"
                                 className={({ isActive, isPending }) =>
                                     isPending
                                         ? "pending"
@@ -62,9 +50,10 @@ const Navber = () => {
                                         ? "text-red-500 underline"
                                         : ""
                                 }>
-                                About Us
+                                Gallery
                             </NavLink>
                         </li>
+
                         <li>
                             <NavLink
                                 to="/Login"
