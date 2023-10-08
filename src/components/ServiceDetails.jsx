@@ -13,7 +13,7 @@ const ServiceDetail = () => {
         fetch(`/data.json`)
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error("Network response was not ok");
+                    throw new Error("");
                 }
                 return response.json();
             })
@@ -24,7 +24,7 @@ const ServiceDetail = () => {
                 setService(selectedService);
             })
             .catch((error) => {
-                console.error("Error fetching service details:", error);
+                console.error("", error);
             });
     }, [serviceId]);
 
@@ -92,7 +92,7 @@ const ServiceDetail = () => {
                         <button
                             onClick={handleBokedClick}
                             className=" btn bg-sky-500">
-                            booked
+                            Booking Now
                         </button>
                     </div>
                 </div>
