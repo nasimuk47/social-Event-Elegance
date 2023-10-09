@@ -61,6 +61,7 @@ const Registration = () => {
                 Swal.fire({
                     icon: "success",
                     title: "Registration successful!",
+                    showConfirmButton: false,
                 });
             });
 
