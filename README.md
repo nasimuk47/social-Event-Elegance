@@ -1,8 +1,25 @@
-# React + Vite
+# social_event_elegance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Livelink : https://social-event-elegance.web.app/
 
-Currently, two official plugins are available:
+# My project features~
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Navigation Bar:
+
+Create a navigation bar or menu for easy access to different sections of the website.
+
+-   Homepage:
+    The homepage typically provides an introduction to the wedding planning services, possibly with images and a brief description.
+
+-   User Registration and Authentication:
+
+Allow users to create accounts and log in securely.
+Implement password reset and email confirmation functionalities.
+
+-   User Profiles:
+
+Let users customize their profiles with profile pictures, names, and other relevant information.
+
+-   Responsive Design:
+
+Ensure the website looks and functions well on various devices, including desktops, tablets, and smartphones.
