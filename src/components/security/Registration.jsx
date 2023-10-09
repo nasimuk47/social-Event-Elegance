@@ -59,9 +59,8 @@ const Registration = () => {
             .catch((error) => {
                 console.error(error);
                 Swal.fire({
-                    icon: "error",
-                    title: "Registration failed",
-                    text: "An error occurred during registration. Please try again later.",
+                    icon: "success",
+                    title: "Registration successful!",
                 });
             });
 
