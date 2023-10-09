@@ -1,24 +1,106 @@
-import { useContext } from "react";
+/* eslint-disable no-unused-vars */
+// Registration.js
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import { AuthContext } from "../AuthProvider";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.css";
 
 const Registration = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, signInUser, signInWithGoogle } =
+        useContext(AuthContext);
 
+    const navigate = useNavigate();
     const handleRegister = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, photo, email, password);
 
-        createUser(email, password)
-            .then((Result) => {
-                console.log(Result.user);
+        if (password.length < 6) {
+            Swal.fire({
+                icon: "error",
+                title: "Invalid Password",
+                text: "Password must be at least 6 characters long.",
+            });
+            return;
+        }
+
+        if (!/[A-Z]/.test(password)) {
+            Swal.fire({
+                icon: "error",
+                title: "Invalid Password",
+                text: "Password must contain at least one capital letter.",
+            });
+            return;
+        }
+
+        if (!/[!@#$%^&*]/.test(password)) {
+            Swal.fire({
+                icon: "error",
+                title: "Invalid Password",
+                text: "Password must contain at least one special character (!@#$%^&*).",
+            });
+            return;
+        }
+
+        createUser(email, password, photo, name)
+            .then((result) => {
+                console.log(result.user);
+                Swal.fire({
+                    icon: "success",
+                    title: "Registration successful!",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
             })
             .catch((error) => {
                 console.error(error);
+                Swal.fire({
+                    icon: "error",
+                    title: "Registration failed",
+                    text: "An error occurred during registration. Please try again later.",
+                });
             });
+
+        signInUser(email, password)
+            .then((result) => {
+                console.log(result.user);
+                e.target.reset();
+                navigate("/");
+            })
+            .catch((error) => console.error(error));
+    };
+
+    const handleGoogleRegister = () => {
+        signInWithGoogle()
+            .then((result) => {
+                console.log(result.user);
+                Swal.fire({
+                    icon: "success",
+                    title: "Google Sign-In successful!",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                navigate("/");
+            })
+            .catch((error) => {
+                console.error(error);
+                Swal.fire({
+                    icon: "error",
+                    title: "Google Sign-In failed",
+                    text: "An error occurred during Google Sign-In.",
+                });
+            });
+
+        signInUser()
+            .then((result) => {
+                console.log(result.user);
+                navigate("/");
+            })
+            .catch((error) => console.error(error));
     };
 
     return (
@@ -88,18 +170,20 @@ const Registration = () => {
                         </h1>
 
                         <div className="flex justify-center ">
-                            <button className="btn bg-sky-400 mb-2 w-[200px]">
+                            <button
+                                onClick={handleGoogleRegister}
+                                className="btn bg-sky-400 mb-2 w-[200px]">
                                 Log in With google
                             </button>
                         </div>
                         <h1 className="font-bold flex justify-center">
-                            Allready have an account?
+                            Already have an account?
                         </h1>
-                        <a
-                            className="text-center mb-10 underline  text-blue-600 "
-                            href="/Login">
+                        <Link
+                            to="/Login"
+                            className="text-center mb-10 underline text-blue-600">
                             Login Now
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

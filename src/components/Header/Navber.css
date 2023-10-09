@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .login-registration-links {
+        display: none;
+    }
+    .user-email {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .user-info {
+        display: none;
+    }
+}

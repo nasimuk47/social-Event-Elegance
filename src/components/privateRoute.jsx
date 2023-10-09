@@ -5,7 +5,11 @@ import { Navigate } from "react-router-dom"; // Import the Navigate component
 import { AuthContext } from "./AuthProvider";
 
 const PrivateRoute = ({ children }) => {
-    const { user } = useContext(AuthContext);
+    const { user, loading } = useContext(AuthContext);
+
+    if (loading) {
+        return <span className="loading loading-spinner loading-lg"></span>;
+    }
 
     if (user) {
         return children;

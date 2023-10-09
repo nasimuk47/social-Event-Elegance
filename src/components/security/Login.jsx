@@ -1,9 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.css";
 
 /* eslint-disable react/no-unescaped-entities */
 const Login = () => {
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle } = useContext(AuthContext);
+
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -14,8 +19,60 @@ const Login = () => {
         signInUser(email, password)
             .then((result) => {
                 console.log(result.user);
+                e.target.reset();
+                navigate("/");
+                Swal.fire({
+                    icon: "success",
+                    title: "Login successful!",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
             })
-            .catch((error) => console.error(error));
+            .catch((error) => {
+                console.error(error.message);
+
+                if (error.code === "auth/wrong-password") {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Login failed",
+                        text: error,
+                    });
+                } else if (error.code === "auth/user-not-found") {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Login failed",
+                        text: error,
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Login failed",
+                        text: error,
+                    });
+                }
+            });
+    };
+
+    const handleGoogleSignin = () => {
+        signInWithGoogle()
+            .then((result) => {
+                console.log(result.user);
+                navigate("/");
+                Swal.fire({
+                    icon: "success",
+                    title: "Google Sign-In successful!",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+            })
+            .catch((error) => {
+                console.error(error);
+                Swal.fire({
+                    icon: "error",
+                    title: "Google Sign-In failed",
+                    text: error,
+                });
+            });
     };
 
     return (
@@ -53,7 +110,9 @@ const Login = () => {
                 <h1 className="font-serif ml-8 mb-2">Or Login With</h1>
 
                 <div className="flex justify-center ">
-                    <button className="btn bg-sky-400 mb-2 w-[200px]">
+                    <button
+                        onClick={handleGoogleSignin}
+                        className="btn bg-sky-400 mb-2 w-[200px]">
                         Log in With google
                     </button>
                 </div>

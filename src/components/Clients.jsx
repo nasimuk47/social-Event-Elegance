@@ -61,7 +61,7 @@ const Clients = () => {
                     </div>
                 </div>
                 {/* card 1-------------------------- */}
-                <div className="card w-80 bg-base-100 shadow-xl">
+                <div className="card w-80 bg-base-100 shadow-xl mt-5">
                     <figure className="px-10 pt-10">
                         <img
                             src="https://i.ibb.co/30VgkH9/client2.jpg"
@@ -73,7 +73,7 @@ const Clients = () => {
                     <h2 className="text-xl font-bold flex justify-center mt-3">
                         Kenerds Dreamy
                     </h2>
-                    <div className="card-body items-center text-center">
+                    <div className="card-body items-center text-center ">
                         <h2 className="card-title"></h2>
                         <div>
                             <div className="rating">
@@ -116,7 +116,7 @@ const Clients = () => {
                     </div>
                 </div>
                 {/* card 1-------------------------- */}
-                <div className="card w-80 bg-base-100 shadow-xl">
+                <div className="card w-80 bg-base-100 shadow-xl mt-5">
                     <figure className="px-10 pt-10">
                         <img
                             src="https://i.ibb.co/zh1t6Y2/client3.jpg"

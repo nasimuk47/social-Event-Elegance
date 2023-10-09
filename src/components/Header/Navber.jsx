@@ -2,21 +2,22 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Form from "../../assets/logo2.avif";
-import UserProfileImage from "../../assets/user.png"; // Import the user profile image
 import { AuthContext } from "../AuthProvider";
+import "./Navber.css";
 
 const Navber = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, loading } = useContext(AuthContext);
 
     const handleLogout = () => {
         logOut()
-            .then(() => console.log("user logged Out Succesfully"))
+            .then(() => console.log("user logged Out Successfully"))
             .catch((error) => console.error(error));
     };
+
     return (
         <div>
-            <div className="flex justify-between items-center mt-2 px-4 bg-[#FFFFFFF2] rounded-md h-20 border">
-                <h1>
+            <div className="flex justify-between items-center mt-2 px-4 bg-[#FFFFFFF2] rounded-md h-20 ">
+                <h1 className="logo">
                     <img src={Form} alt="" className="h-16" />
                 </h1>
                 <nav>
@@ -62,7 +63,7 @@ const Navber = () => {
                             </NavLink>
                         </li>
 
-                        <li>
+                        <li className="login-registration-links">
                             <NavLink
                                 to="/Login"
                                 className={({ isActive, isPending }) =>
@@ -75,7 +76,7 @@ const Navber = () => {
                                 Login
                             </NavLink>
                         </li>
-                        <li>
+                        <li className="login-registration-links">
                             <NavLink
                                 to="/Registration"
                                 className={({ isActive, isPending }) =>
@@ -90,30 +91,30 @@ const Navber = () => {
                         </li>
                     </ul>
                 </nav>
-                <div className="flex items-center">
-                    <img
-                        src={UserProfileImage}
-                        alt="User Profile"
-                        className="h-10 rounded-full"
-                    />
-                    <div>
-                        {user ? (
-                            <>
-                                <span>{user.email}</span>
+                <div className="flex items-center user-info">
+                    {user ? (
+                        <>
+                            <img
+                                src={user.photoURL || "../../assets/user.png"} // Use the user's photoURL or a default image
+                                alt="User Profile"
+                                className="h-10 rounded-full "
+                            />
+                            <div>
+                                <span className="user-email">{user.email}</span>
                                 <button
                                     onClick={handleLogout}
                                     className="bg-blue-500 text-white px-3 py-1 rounded-md ml-2">
-                                    LogOut
+                                    Logout
                                 </button>
-                            </>
-                        ) : (
-                            <Link to="/Login">
-                                <button className="bg-blue-500 text-white px-3 py-1 rounded-md  ">
-                                    Login
-                                </button>
-                            </Link>
-                        )}
-                    </div>
+                            </div>
+                        </>
+                    ) : (
+                        <Link to="/Login">
+                            <button className="bg-blue-500 text-white px-3 py-1 rounded-md">
+                                Login
+                            </button>
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

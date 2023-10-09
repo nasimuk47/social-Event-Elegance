@@ -38,11 +38,13 @@ const Home = () => {
         <div className="mt-5">
             <div style={bannerStyle}>
                 <div>
-                    <h1 className="text-7xl flex justify-center">
+                    <h1 className="text-5xl sm:text-7xl flex justify-center">
                         WE ARE -<span className="text-blue-300"> BRIDE</span>
                     </h1>{" "}
                     <br />
-                    <h2 className="text-5xl">Wedding Organizer Company.</h2>
+                    <h2 className="text-2xl sm:text-5xl">
+                        Wedding Organizer Company.
+                    </h2>
                 </div>
             </div>
 
