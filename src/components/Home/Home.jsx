@@ -4,9 +4,15 @@ import { Link } from "react-router-dom";
 import Clients from "../Clients";
 import WeddingPlan from "../WeddingPlan";
 import Footer from "../Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
-    const backgroundImageUrl = "https://i.ibb.co/3Fpk33T/weaddig-banner.webp";
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+    const backgroundImageUrl = "https://i.ibb.co/sJRBDh9/a.jpg";
 
     const bannerStyle = {
         backgroundImage: `url(${backgroundImageUrl})`,
@@ -35,14 +41,17 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="mt-5">
+        <div className="">
             <div style={bannerStyle}>
                 <div>
-                    <h1 className="text-5xl sm:text-7xl flex justify-center">
+                    <h1
+                        className="text-5xl sm:text-7xl flex justify-center"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
                         WE ARE -<span className="text-blue-300"> BRIDE</span>
                     </h1>{" "}
                     <br />
-                    <h2 className="text-2xl sm:text-5xl">
+                    <h2 className="text-2xl sm:text-5xl text-gray-200">
                         Wedding Organizer Company.
                     </h2>
                 </div>
@@ -56,7 +65,9 @@ const Home = () => {
                 {cardsData.map((card) => (
                     <div
                         key={card.id}
-                        className="card card-compact w-[360px] bg-base-100 shadow-xl mt-5">
+                        className="card card-compact w-[360px] bg-base-100 shadow-xl mt-5"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
                         <figure>
                             <img
                                 className="w-full h-64 p-2 rounded-t-2xl"

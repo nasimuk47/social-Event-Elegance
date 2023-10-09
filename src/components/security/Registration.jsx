@@ -173,7 +173,7 @@ const Registration = () => {
                             <button
                                 onClick={handleGoogleRegister}
                                 className="btn bg-sky-400 mb-2 w-[200px]">
-                                Log in With google
+                                Register With google
                             </button>
                         </div>
                         <h1 className="font-bold flex justify-center">
